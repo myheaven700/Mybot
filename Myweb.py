@@ -5,9 +5,9 @@ import hashlib
 import time
 
 # ✅ ใส่ข้อมูล Cloudinary ของคุณตรงนี้
-CLOUD_NAME = "ใส่ของคุณ"
-API_KEY = "ใส่ของคุณ"
-API_SECRET = "ใส่ของคุณ"
+CLOUD_NAME = "dxnbs8aio"
+API_KEY = "298926853485115"
+API_SECRET = "BS_w4IFssQzbDZo1XliXEfv_JE4"
 
 # 🔐 ตั้งรหัสผ่าน
 PASSWORD = "mypassword123"
