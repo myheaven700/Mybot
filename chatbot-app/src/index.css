@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+  line-height: 1.6;
+  color: #171717;
+  background-color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+/* Luxury animations */
+.luxury-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-hover:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styles */
+.btn-luxury {
+  @apply px-6 py-3 bg-gray-900 text-white font-medium rounded-lg luxury-transition;
+  @apply hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+}
+
+.btn-luxury-outline {
+  @apply px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg luxury-transition;
+  @apply hover:border-gray-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+}
+
+/* Input styles */
+.input-luxury {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg luxury-transition;
+  @apply focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent;
+  @apply placeholder-gray-400 text-gray-900;
+}
+
+/* Card styles */
+.card-luxury {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 luxury-transition luxury-hover;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}
